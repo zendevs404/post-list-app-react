@@ -1,0 +1,34 @@
+/* src/components/Banner.css */
+.banner {
+  position: relative;
+  height: 400px; /* Atur tinggi sesuai dengan desain */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%); /* Membuat area miring di bagian bawah */
+  overflow: hidden;
+  transition: background-position 0.2s ease-out; /* Animasi parallax */
+}
+
+.banner-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  z-index: 10;
+}
+
+.banner h1 {
+  font-size: 3rem;
+  margin: 0;
+  padding: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Menambahkan bayangan pada teks agar lebih terlihat */
+}
+
+.banner p {
+  font-size: 1.2rem;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
